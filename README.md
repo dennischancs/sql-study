@@ -10,8 +10,13 @@ sql-study
 # 1. 搭建mysql环境
 1. 安装docker engine（linux） 或 docker desktop（windows/macOS）
 2. 下载本仓库的`docker-compose.yml`文件，同目录下 运行 `docker-compose up -d` 命令，完成启动
-3. 访问 [http://localhost:8080](http://localhost:8080), 使用用户名 `root` 密码`exmaple` 登陆
+   - 后端为mysql
+   - 前端为[adminer](https://www.adminer.org/)
+3. 可视化编程：访问 [http://localhost:8080](http://localhost:8080), 使用用户名 `root` 密码`exmaple` 登陆
    ![mysql_adminer](https://images.weserv.nl?url=https://raw.githubusercontent.com/dennischancs/pic/main/img/202204181105699.png)
+   ![sql命令界面](https://images.weserv.nl?url=https://raw.githubusercontent.com/dennischancs/pic/main/img/202204181133140.png)
+4. 若要使用其它可视化编程界面，填写相应`ipaddress:port@usr/passwd`连接。以navicat为例
+   ![navicat](https://images.weserv.nl?url=https://raw.githubusercontent.com/dennischancs/pic/main/img/202204181135190.png)
 
 
 # 2. sql核心命令
