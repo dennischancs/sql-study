@@ -65,7 +65,9 @@ CREATE TABLE website (  -- 创建了一个名称是website的数据表
 DESC website                            -- description查看表的信息描述，可用于验证 website 表是否存在
 DESC Persons
 SELECT * FROM Persons                   -- 展示Persons表中的数据
-DELETE FROM Persons WHERE PersonID=1    -- 删除Persons表中 PersonID值为1的行，`PersonID=1`为真值时才会执行`DELETE`
+SELECT * FROM Persons WHERE LastName='dennis'  -- 字符串必须加''
+DELETE FROM Persons WHERE PersonID=1    -- 删除Persons表中 PersonID列中 值为`1`的行，`PersonID=1`为真值时才会执行`DELETE`指令
+DELETE FROM Persons WHERE PersonID='1'  -- 数值加不加''均可
 TRUNCATE TABLE Persons                  -- 清空Persons表中的数据
 DROP TABLE website, Persons             -- 删除website, Persons 表（在study数据库中）
 DROP DATABASE study                     -- 删除study数据库
